@@ -1,0 +1,425 @@
+body{
+    font-size: 16px;
+    background-size: cover;
+    background-position: center;
+    font-family: serif;
+}
+/** Header **/
+#header-nav{
+    background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url("../css/bg1.jpg");
+    border-radius: 0;
+    border: 0;
+/*    background-size: cover;*/
+    background-position: center;
+
+}
+.navbar-brand{
+    padding-top: 25px;
+}
+.navbar-brand h1{/* site name*/
+
+    font-family:times;
+/*    color: #331452;*/
+    color:chartreuse;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 1px 9px #33ffff;
+    margin-top: 10px;
+    margin-bottom: -15px;
+    animation: cse 6s infinite;
+}
+@keyframes cse{
+    0%{color: #ff4dff;}
+    50%{color: white;}
+    100%{color: #00ff99;}
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+     
+}
+/* navbar collapsed */
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid chartreuse;
+    
+}
+/* Home, tutorial, About button */
+#nav-list{
+    margin-top: 13px;
+    margin-bottom: 12px;
+}
+#nav-list a{
+   color: brown;
+    text-align: center;
+    font-weight: bold;
+    
+}
+#nav-list a:hover{
+/*    background:green;*/
+    border: 2px solid  #99ffff;
+    border-style: inset;
+    
+}
+#nav-list a span{
+    font-size: 25px;
+    text-align: center;
+/*	font-size: 20px;*/
+	font-weight: bold;
+
+}
+.navbar-header, button.navbar-toggle, .navbar-header, .icon-bar{
+    border: none;
+}
+
+.navbar-header button.navbar-toggle{
+    clear: both;
+    margin-top: -30px;
+}
+#collapsable-nav a{ /* size of HOME Tutorial and about...*/
+    font-size: 1.3em;
+}
+#collapsable-nav a span{ /* size of HOME logo ...*/
+ font-size: 1em;   
+ margin-right: 5px;    
+}
+
+
+
+/*Footer style*/
+.panel-footer{
+    background-color: #222;
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    border-top: 0;
+    text-align: center;
+    border: 0;
+}
+.panel-footer div.row{
+    margin-bottom: 35px;
+    font-size: 16px;
+    color: #fff;
+}
+
+#hours, #address{
+    line-height: 2;
+}
+#hours >span, #address>span{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+#address a{
+    height: 20vh;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+
+    border-radius: 100px;
+    text-align: center;
+    margin: 20px;
+    width: 50px;
+    box-shadow: 2px 4px 1px 1px #dcdde1;
+ 
+}
+#address a i{
+    transition: all 0.3s linear;
+    font-size: 22px;
+    line-height: 1.7;
+    text-align: center;
+}
+#address a i:hover{
+    transform: scale(1.2);
+}
+.fa-instagram{
+    color: #e84393;
+}
+
+.fa-youtube{
+    color: #e84118;
+}
+
+/*super extra small devices only*/
+@media (max-width: 479){
+/*    Website name */
+    .navbar-brand h1{
+        padding-top: 2px;
+        font-size: 5ew;
+    }
+    /* Home page */
+  #home-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+/* End of webiste name    */
+     .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+    
+    #hours, #address{
+    line-height: 2;
+}
+#hours >span, #address>span{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+#address a{
+    height: 20vh;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width:  25px;
+
+    border-radius: 100px;
+    text-align: center;
+    margin: 7px;
+    width: 10px;
+    box-shadow: 2px 4px 1px 1px #dcdde1;
+ 
+}
+#address a i{
+    transition: all 0.3s linear;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+}
+#address a i:hover{
+    transform: scale(1.2);
+}
+
+}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 5px;
+    height: 50px;
+  }
+  .navbar-brand h1 { /* website name */
+    padding-top: 0; 
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  
+  #collapsable-nav a {  /*Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+  #collapsable-nav a span {  /*Collapsed nav menu glyph*/ 
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section hr {
+    width: 70%;
+  }
+  /* End Footer */
+
+  
+#hours, #address{
+    line-height: 2;
+}
+#hours >span, #address>span{
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+#address a{
+    height: 10vh;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+
+    border-radius: 100px;
+    text-align: center;
+    margin: 10px;
+    width: 25px;
+    box-shadow: 2px 4px 1px 1px #dcdde1;
+ 
+}
+#address a i{
+    transition: all 0.3s linear;
+    font-size: 20px;
+    line-height: 1.2;
+
+}
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  /* End Home Page */
+    .navbar-brand h1 { /* website name */
+    padding-top: 0px; 
+    font-size: 4vw; /* 1vw = 1% of viewport width */
+  }
+   
+    #hours, #address{
+    line-height: 2;
+}
+#hours >span, #address>span{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+#address a{
+    height: 20vh;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width:  25px;
+
+    border-radius: 100px;
+    text-align: center;
+    margin: 7px;
+    width: 40px;
+    box-shadow: 2px 4px 1px 1px #dcdde1;
+ 
+}
+#address a i{
+    transition: all 0.3s linear;
+    font-size: 25px;
+    line-height: 1.8;
+    text-align: center;
+}
+#address a i:hover{
+    transform: scale(1.2);
+}
+
+}
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 1px;
+      margin-right: 2px;
+      margin-top: 15px
+  }
+  /* End Header */
+    #hours, #address{
+    line-height: 2;
+}
+#hours >span, #address>span{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+#address a{
+    height: 20vh;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width:  25px;
+
+    border-radius: 100px;
+    text-align: center;
+    margin: 7px;
+    width: 40px;
+    box-shadow: 2px 4px 1px 1px #dcdde1;
+ 
+}
+#address a i{
+    transition: all 0.3s linear;
+    font-size: 25px;
+    line-height: 1.8;
+    text-align: center;
+}
+#address a i:hover{
+    transform: scale(1.2);
+}
+
+}
+/*Main content */
+#main-content a h3{
+/*    text-align: center;*/
+    line-height: 0px;
+    margin: 6px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+#main-content a h3:hover{
+    text-transform: none;
+    color:red;
+    text-transform: uppercase;
+    text-decoration: red;
+}
+#box1{
+    background-color: aliceblue;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: content-box;
+    height: auto;
+    margin-top: 20px;
+    overflow: auto;
+    box-shadow:5px 5px 90px orange; 
+}
+#output1{
+    background-color: aliceblue;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: content-box;
+    height: auto;
+    margin-top: 20px;
+    overflow: auto;
+    box-shadow:5px 5px 50px red; 
+    font-weight: 600;
+}
+#fibo{
+    height: 100%;
+    width: 80%;
+    border: 1px black;
+    padding: 30px 10px 10px 30px;
+}
+#fibo h4{
+    text-align:left;
+    font-size: 30px;
+    font-family: "Times New Roman", serif;
+    padding: 10px;
+    
+}
+#fibo h5{
+    
+    font-size: 18px;
+    font-family:Cambria serif;
+    text-align: left;
+    padding-left: 15px;
+}
+#fibo span{
+    text-align:left;
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+
+#next{
+    text-align: center;
+    
+}
+
+
+
+
+

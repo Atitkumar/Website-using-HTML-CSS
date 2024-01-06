@@ -1,0 +1,356 @@
+{
+    font-size: 16px;
+/*    background-image: url("background.jpg")  ;*/
+
+    font-family: serif;
+}
+/** Header **/
+#header-nav{
+    background-image:url(t.PNG);
+    border-radius: 0;
+    border: 0;
+}
+/* logo image */
+#logo-img{
+    background: url("Logo75.png") no-repeat;
+    width: 100px;
+    height:100px;
+    margin-top: 10px;
+    margin-left: -60px;
+    margin-bottom: -12px;
+}
+.navbar-brand{
+    padding-top: 25px;
+}
+.navbar-brand h1{/* site name*/
+/*    font-family: "Times New Roman", serif;*/
+    font-family:cursive;
+    color: #331452;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px red;
+    margin-top: 10px;
+    margin-bottom: -15px;
+/*    line-height: ;*/
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+/* navbar collapsed */
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid #61122f;
+}
+/* Home, tutorial, About button */
+#nav-list{
+    margin-top: 13px;
+}
+#nav-list a{
+    color: #331452;
+    text-align: center;
+}
+#nav-list a:hover{
+    background:	 #cce6ff;
+    border: 2px solid green;
+    border-style: inset
+}
+#nav-list a span{
+    font-size: 25px;
+    text-align: center;
+/*	font-size: 20px;*/
+	font-weight: bold;
+
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle{
+    clear: both;
+    margin-top: -30px;
+}
+#collapsable-nav a{ /* size of HOME Tutorial and about...*/
+    font-size: 1.3em;
+}
+#collapsable-nav a span{ /* size of HOME logo ...*/
+ font-size: 1em;   
+ margin-right: 5px;    
+}
+
+
+/*Footer style*/
+.panel-footer{
+    background-color: #222;
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    border-top: 0;
+    text-align: center;
+    border: 0;
+}
+.panel-footer div.row{
+    margin-bottom: 35px;
+    font-size: 16px;
+    color: #fff;
+}
+
+#hours, #address{
+    line-height: 2;
+}
+#hours >span, #address>span{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+#address a{
+    height: 20vh;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+
+    border-radius: 100px;
+    text-align: center;
+    margin: 20px;
+    width: 50px;
+    box-shadow: 2px 4px 1px 1px #dcdde1;
+ 
+}
+#address a i{
+    transition: all 0.3s linear;
+    font-size: 22px;
+    line-height: 1.7;
+    text-align: center;
+}
+#address a i:hover{
+    transform: scale(1.2);
+}
+.fa-instagram{
+    color: #e84393;
+}
+
+.fa-youtube{
+    color: #e84118;
+}
+
+/*super extra small devices only*/
+@media (max-width: 479){
+/*    Website name */
+    .navbar-brand h1{
+        padding-top: 2px;
+        font-size: 5ew;
+    }
+    /* Home page */
+  #home-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+/* End of webiste name    */
+     .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+    
+    #hours, #address{
+    line-height: 2;
+}
+#hours >span, #address>span{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+#address a{
+    height: 20vh;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width:  25px;
+
+    border-radius: 100px;
+    text-align: center;
+    margin: 7px;
+    width: 10px;
+    box-shadow: 2px 4px 1px 1px #dcdde1;
+ 
+}
+#address a i{
+    transition: all 0.3s linear;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+}
+#address a i:hover{
+    transform: scale(1.2);
+}
+
+}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 5px;
+    height: 50px;
+  }
+  .navbar-brand h1 { /* website name */
+    padding-top: 0; 
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  
+  #collapsable-nav a {  /*Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+  #collapsable-nav a span {  /*Collapsed nav menu glyph*/ 
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section hr {
+    width: 70%;
+  }
+  /* End Footer */
+
+  
+#hours, #address{
+    line-height: 2;
+}
+#hours >span, #address>span{
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+#address a{
+    height: 10vh;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+
+    border-radius: 100px;
+    text-align: center;
+    margin: 10px;
+    width: 25px;
+    box-shadow: 2px 4px 1px 1px #dcdde1;
+ 
+}
+#address a i{
+    transition: all 0.3s linear;
+    font-size: 20px;
+    line-height: 1.2;
+
+}
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  /* End Home Page */
+    .navbar-brand h1 { /* website name */
+    padding-top: 0px; 
+    font-size: 4vw; /* 1vw = 1% of viewport width */
+  }
+   
+    #hours, #address{
+    line-height: 2;
+}
+#hours >span, #address>span{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+#address a{
+    height: 20vh;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width:  25px;
+
+    border-radius: 100px;
+    text-align: center;
+    margin: 7px;
+    width: 40px;
+    box-shadow: 2px 4px 1px 1px #dcdde1;
+ 
+}
+#address a i{
+    transition: all 0.3s linear;
+    font-size: 25px;
+    line-height: 1.8;
+    text-align: center;
+}
+#address a i:hover{
+    transform: scale(1.2);
+}
+
+}
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 1px;
+      margin-right: 2px;
+      margin-top: 15px
+  }
+  /* End Header */
+    #hours, #address{
+    line-height: 2;
+}
+#hours >span, #address>span{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+#address a{
+    height: 20vh;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width:  25px;
+
+    border-radius: 100px;
+    text-align: center;
+    margin: 7px;
+    width: 40px;
+    box-shadow: 2px 4px 1px 1px #dcdde1;
+ 
+}
+#address a i{
+    transition: all 0.3s linear;
+    font-size: 25px;
+    line-height: 1.8;
+    text-align: center;
+}
+#address a i:hover{
+    transform: scale(1.2);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+

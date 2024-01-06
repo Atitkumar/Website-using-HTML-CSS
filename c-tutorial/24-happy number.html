@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UI-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Program to determine whether a given number is a happy number using c</title> 
+      <!-- For youtube insta and fb icon    -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="fibonaci.css">  
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  </head>
+    
+    <body>
+      <header>
+        <nav id="header-nav" class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="index.html" class="pull-left visible-md visible-lg">
+                <div id="logo-img" alt="Logo Image"></div>  
+              </a>  
+                <div class="navbar-brand">
+                 <a href="../index.html"><h1>CSE LIFE</h1></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+              
+              <div id="collapsable-nav" class="collapse navbar-collapse">
+                <ul id="nav-list" class="nav navbar-nav navbar-right">
+                   <li>
+                     <a href="../index.html">
+                         <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home  
+                     </a> 
+                   </li>  
+                   <li >
+                     <a href="../css/Tutorial.html">
+                         <span class="glyphicon glyphicon-list"></span><br class="hidden-xs"> Tutorial 
+                     </a> 
+                   </li>  
+                   <li class="">
+                     <a href="../css/About.html">
+                         <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About 
+                     </a> 
+                   </li>          
+                </ul>
+              </div>
+              
+          </div>  
+        </nav>  
+      </header>
+        
+        <!--    Large  Program BOX     -->
+        
+        <div id="fibo">
+            <h4><b>
+Program to determine whether a given number is a happy number using c.</b></h4>
+            <h5> The happy number can be defined as a number which will yield 1 when it is replaced by the sum of the square of its digits repeatedly. If this process results in an endless cycle of numbers containing 4, then the number is called an unhappy number.<br><br>32 is a happy number as the process yields 1 as follows <br><br>
+3<sup>2</sup> + 2<sup>2</sup> = 13<br>
+                1<sup>2</sup> + 3<sup>2</sup> = 10<br>
+                1<sup>2</sup> + 0<sup>2</sup> = 1
+<br><br>Some of the other examples of happy numbers are 7, 28, 100, 320 and so on.
+
+The unhappy number will result in a cycle of 4, 16, 37, 58, 89, 145, 42, 20, 4, ....</h5>
+            
+        <!--     1st Program BOX     --> 
+        <div id="box1">
+ <pre><span>#include &#60;stdio.h&#62;      
+// HappyNumber() will determine whether a number is happy or not. 
+int HappyNumber(int numb){  
+int remi = 0, sum = 0;  
+//Calculates the sum of squares of digits.  
+while(numb > 0){  
+  remi = numb%10;  
+  sum = sum + (remi*remi);  
+  numb = numb/10;  
+ }  
+  return sum;  
+}        
+int main()  
+{  
+ int numb = 82;  
+ int result = numb;  
+ while(result != 1 && result != 4){  
+   result = HappyNumber(result);  
+}  
+//Happy number always ends with 1  
+ if(result == 1)  
+   printf("%d is a happy number", numb);  
+//Unhappy number ends in a cycle of repeating numbers which contains 4  
+ else if(result == 4)  
+  printf("%d is not a happy number", numb); 
+ return 0;  
+}  
+</span></pre>
+          </div>
+                <!--  end of 1st Program BOX     -->
+                    
+                <h4>Output:-</h4>
+           <div id="output1">
+               <span>82 is a happy number
+               </span>
+           </div>
+              
+                
+              
+            </div>   
+<!--     End of Large Program BOX     -->            
+            
+            
+<!--          Next and Previous Post  -->
+                
+<div id="next">
+    <a href="20-surface%20area%20of%20cube.html"><h3>Next Post</h3></a>
+    <a href="20-surface%20area%20of%20cube.html"><h3>Previous Post</h3></a>
+</div>
+    
+<!--    End of Next and Previous Post  -->
+            
+            <!-- Footer -->
+    <footer class="panel-footer" style="background-color: #222">
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-sm-6">
+            <span>Cse Life</span><br>
+              Terms and services <br>
+              Privacy policy
+              <hr class="visible-xs">
+          </section>
+          <section id="address" class="col-sm-6">
+            <span> Follow-us </span><br>
+              <a href="">
+                   <i class=" fab fa-facebook"></i> <br>
+                 </a>
+                  <a href="">
+                   <i class=" fab fa-instagram"></i> <br>
+                 </a>
+                  <a href="">
+                   <i class=" fab fa-youtube"></i> 
+                 </a>
+              <hr class="visible-xs">
+          </section>    
+        </div>
+        <div class="text-center" style="color: aliceblue">
+          &copy; Copyright CseLife 2020  
+        </div>  
+      </div>
+    </footer>    
+        
+    <!-- jQuery (Bootstrap js plugin depend on it)-->    <script  src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

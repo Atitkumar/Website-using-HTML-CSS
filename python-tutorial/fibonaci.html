@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UI-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Program to find Fibonacci Series using Python</title> 
+      <!-- For youtube insta and fb icon    -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="ProgramStyle.css">  
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  </head>
+    
+    <body>
+      <header>
+        <nav id="header-nav" class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="index.html" class="pull-left visible-md visible-lg">
+                <div id="logo-img" alt="Logo Image"></div>  
+              </a>  
+                <div class="navbar-brand">
+                 <a href="../index.html"><h1>CSE LIFE</h1></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+              
+              <div id="collapsable-nav" class="collapse navbar-collapse">
+                <ul id="nav-list" class="nav navbar-nav navbar-right">
+                   <li>
+                     <a href="../index.html">
+                         <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home  
+                     </a> 
+                   </li>  
+                   <li >
+                     <a href="../css/Tutorial.html">
+                         <span class="glyphicon glyphicon-list"></span><br class="hidden-xs"> Tutorial 
+                     </a> 
+                   </li>  
+                   <li class="">
+                     <a href="../css/About.html">
+                         <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About 
+                     </a> 
+                   </li>          
+                </ul>
+              </div>
+              
+          </div>  
+        </nav>  
+      </header>
+        
+        <!--    Large  Program BOX     -->
+        
+        <div id="fibo">
+            <h4><b>Program to find fibonacci series using Python</b></h4>
+            <h5>Fibonacci Series in C : In case of fibonacci series, next number is the sum of previous two numbers for example:-<br> 0,<br> 1,<br> 0 + 1 = 1,<br> 1 + 1 = 2,<br> 1 + 2 = 3,<br> 2 + 3 = 5,<br> 3 + 5 = 8 and so on.<br>0, 1, 1, 2, 3, 5, 8, 13, 21 etc. The first two numbers of fibonacci series are 0 and 1.</h5>
+            <h4> Program to display the Fibonacci sequence up to n-th term</h4>
+        <!--     1st Program BOX     --> 
+        <div id="box1">
+<pre><span>nterms = int(input("How many terms? "))
+# first two terms 
+n1, n2 = 0, 1
+count = 0
+# check if the number of terms is valid
+if nterms &#60;= 0:
+    print("Please enter a positive integer")
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while count &#60; nterms:
+       print(n1)
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       count += 1
+            </span></pre>
+          </div>
+                <!--  end of 1st Program BOX     -->
+                    
+                <h4>Output:-</h4>
+           <div id="output1">
+               <span>How many terms? 7<br>
+Fibonacci sequence:
+0
+1
+1
+2
+3
+5
+8
+               </span>
+           </div>
+              
+                
+                
+                
+        </div>
+<!--     End of Large Program BOX     -->            
+            
+            
+<!--          Next and Previous Post  -->
+                
+<div id="next">
+    <a href="#"><h3>Next Post</h3></a>
+    <a href="python.html"><h3>Previous Post</h3></a>
+</div>
+    
+<!--    End of Next and Previous Post  -->
+            
+            <!-- Footer -->
+    <footer class="panel-footer" style="background-color: #222">
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-sm-6">
+            <span>Cse Life</span><br>
+              Terms and services <br>
+              Privacy policy
+              <hr class="visible-xs">
+          </section>
+          <section id="address" class="col-sm-6">
+            <span> Follow-us </span><br>
+              <a href="">
+                   <i class=" fab fa-facebook"></i> <br>
+                 </a>
+                  <a href="">
+                   <i class=" fab fa-instagram"></i> <br>
+                 </a>
+                  <a href="">
+                   <i class=" fab fa-youtube"></i> 
+                 </a>
+              <hr class="visible-xs">
+          </section>    
+        </div>
+        <div class="text-center" style="color: aliceblue">
+          &copy; Copyright CseLife 2020  
+        </div>  
+      </div>
+    </footer>    
+        
+    <!-- jQuery (Bootstrap js plugin depend on it)-->    <script  src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
